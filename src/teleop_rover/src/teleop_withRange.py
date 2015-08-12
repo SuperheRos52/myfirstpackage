@@ -32,7 +32,7 @@ while not rospy.is_shutdown():
     twist.angular.z = gJoy.axes[0]
     twist.linear.x = gJoy.axes[1]
 
-    if gRange.range <= 0.20 and gJoy.axes[1] >= 0:
+    if gRange.range <= 0.35 and gJoy.axes[1] >= 0:
         twist.linear.x = 0
         print "ACHTUNG!!!"
 
