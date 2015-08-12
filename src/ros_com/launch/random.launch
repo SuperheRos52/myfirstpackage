@@ -1,0 +1,4 @@
+<launch>
+    <node name="publisher" pkg="ros_com" type="pub_random.py" output="screen" />
+    <node name="subscriber" pkg="ros_com" type="sub_random.py" output="screen" />
+</launch>
