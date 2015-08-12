@@ -1,0 +1,7 @@
+<launch>
+
+<node name="Joystick" pkg="joy" type="joy_node" output="screen" />
+       <param name ="/rate" value="2" />	
+		
+<node name="helloWorld" pkg="myfirstpackage" type="myfirstnode.py" output="screen" />
+</launch>
