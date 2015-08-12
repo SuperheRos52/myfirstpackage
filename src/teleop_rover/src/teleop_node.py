@@ -10,8 +10,8 @@ twist = Twist()
 
 def callback(joy):
     global twist, pub
-    twist.linear.x = joy.axes[0]
-    twist.linear.y = joy.axes[1]
+    twist.angular.z = joy.axes[0]
+    twist.linear.x = joy.axes[1]
     pub.publish(twist)
 
 rospy.Subscriber('joy', Joy, callback)
