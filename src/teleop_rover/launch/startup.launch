@@ -2,6 +2,6 @@
     <node name="rover" pkg="rosserial_python" type="serial_node.py" output="log" >
         <param name="/port" value="/dev/ttyS5" />
     </node>
-    <node name="joy" pkg="joy" type="joy_node" output="screen" />
+   <!-- <node name="joy" pkg="joy" type="joy_node" output="screen" />-->
     <node name="teleop" pkg="teleop_rover" type="teleop_withRange.py" output="screen" />
 </launch>
